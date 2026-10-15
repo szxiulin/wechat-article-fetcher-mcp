@@ -18,7 +18,9 @@
 
 直接复制下面这句话，发给具备本机文件、终端和 MCP 配置权限的 Agent：
 
-> 请下载 https://github.com/szxiulin/wechat-article-fetcher-mcp 并根据仓库的 README，将微信公众号阅读 MCP 安装到本机固定目录，检查 Node.js 22 或更高版本，将服务接入当前使用的 MCP 客户端并保留已有配置，运行本地测试，确认能发现 fetch_wechat_article 工具；需要我重启客户端或手动启用时，请告诉我具体步骤。
+```text
+请下载 https://github.com/szxiulin/wechat-article-fetcher-mcp 并根据仓库的 README，将微信公众号阅读 MCP 安装到本机固定目录，检查 Node.js 22 或更高版本，将服务接入当前使用的 MCP 客户端并保留已有配置，运行本地测试，确认能发现 fetch_wechat_article 工具；需要我重启客户端或手动启用时，请告诉我具体步骤。
+```
 
 无需提供微信账号或 API Key。客户端不支持本地 stdio MCP 时无法直接接入；服务的启用、信任或客户端重启可能需要你手动完成。
 
