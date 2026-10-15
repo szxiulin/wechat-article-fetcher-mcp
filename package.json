@@ -1,0 +1,32 @@
+{
+  "name": "wechat-article-fetcher-mcp",
+  "version": "0.3.0",
+  "description": "供 AI Agent 调用的微信公众号阅读 MCP：直接返回正文，支持本地 HTML 和 TXT 归档。",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "wechat-article-fetcher": "server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/fetcher.test.js test/protocol.test.js",
+    "check": "node --check server.js && node --check lib/fetcher.js && node --check test/client.js",
+    "smoke": "node test/client.js"
+  },
+  "files": [
+    "server.js",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "微信公众号",
+    "微信",
+    "MCP",
+    "agent",
+    "wechat"
+  ]
+}

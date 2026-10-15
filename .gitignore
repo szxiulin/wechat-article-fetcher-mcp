@@ -1,0 +1,10 @@
+articles/
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+.workbuddy/
+DEVLOG.md
+release/
+*.tgz
