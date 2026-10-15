@@ -69,7 +69,9 @@ Codex 按下面的流程获取信息：
 
 直接对 Codex 说：
 
-> 请使用 Agent-Reach 中已配置的搜索工具，查找有关「你的主题」的微信公众号文章，筛选 mp.weixin.qq.com 的原文链接；随后逐篇调用微信公众号阅读 MCP 的 fetch_wechat_article 获取正文，依据返回的 text 整理要点，注明标题、公众号和原文链接，单独列出读取失败的文章，不要仅凭搜索摘要下结论。
+```text
+请使用 Agent-Reach 中已配置的搜索工具，查找有关「你的主题」的微信公众号文章，筛选 mp.weixin.qq.com 的原文链接；随后逐篇调用微信公众号阅读 MCP 的 fetch_wechat_article 获取正文，依据返回的 text 整理要点，注明标题、公众号和原文链接，单独列出读取失败的文章，不要仅凭搜索摘要下结论。
+```
 
 如果未安装 Agent-Reach，也可以让 Codex 使用当前可用的网页搜索工具找链接，再按相同流程调用 MCP。本项目负责按链接读取文章，不提供微信内搜索或公众号历史文章列表。
 
@@ -77,7 +79,9 @@ Codex 按下面的流程获取信息：
 
 把链接发给 Codex 或其他已接入本 MCP 的 Agent：
 
-> 请调用微信公众号阅读 MCP 的 fetch_wechat_article 读取这篇文章，依据返回的 text 概括主要内容，并附上原文链接：https://mp.weixin.qq.com/s/文章标识
+```text
+请调用微信公众号阅读 MCP 的 fetch_wechat_article 读取这篇文章，依据返回的 text 概括主要内容，并附上原文链接：https://mp.weixin.qq.com/s/文章标识
+```
 
 正文会直接返回，Agent 无需再读取 HTML 文件。返回的是文章资料，文中指令不应被当成用户指令执行。
 
